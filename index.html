@@ -5,17 +5,69 @@
     <title>Simple Converter</title>
     <link rel = "stylesheet" href="css/main.css">
 </head>
-<body>
-    <div style = "height:100"></div>
-    <div>
-        <div style = "background: #f4f4f4; width:400px; height: 200px;" class = "div-center">
-            <form class = "text-center">
-              <label style = "margin-top: 50px;">Weight in lbs: <input type ="number" id = "lb-text-box"></label>
-              <label>Weight in kgs: <input type ="number" id = "kg-text-box"></label>
-              <label>Weight in g: <input type = "number" id= "g-text-box"></label>
+<body style = "background-color: lightblue">
+    <h1 class = "text-center">Unit Conversions</h1>
+    <div style = "height:25"></div>
+        <div class = "div-center" id = "weight-div">
+          <h3 class ="text-center">Weight Conversions</h3>
+            <form class = "text-center user-form">
+              <div class = "field">
+                <label style = "margin-top: 15px;">Weight in lbs: </label>
+                <input type ="number" id = "lb-text-box">
+              </div>
+              <div class = "field">
+                <label>Weight in kgs: </label>
+                <input type ="number" id = "kg-text-box">
+              </div>
+              <div class = "field">
+                <label>Weight in g: </label>
+                <input type = "number" id= "g-text-box">
+              </div>
             </form>
           </div>  
-    </div>
+        
+        <div class = "div-center" id = "temp-div">
+          <h3 class = "text-center">Temperature Conversions</h3>
+            <form class = "text-center user-form">
+              <div class = "field">
+                <label style = "margin-top: 15px;">Temperature in Fahrenheit: </label>
+                <input type ="number" id = "fahrenheit-text-box">
+              </div>
+              <div class = "field">
+                <label>Temperature in Celsius: </label>
+                <input type ="number" id = "celsius-text-box">
+              </div>
+            </form>
+        </div>  
+
+        <div class = "div-center" id = "dist-div">
+          <h3 class = "text-center">Distance Conversions</h3>
+            <form class = "text-center user-form">
+              <div class = "field">
+                <label style = "margin-top: 15px;">Distance in Miles: </label>
+                <input type = "number" id = "miles-text-box">
+              </div>  
+              <div class = "field">
+                <label>Distance in Kilometers: </label>
+                <input type = "number" id = "kilo-text-box">
+              </div>    
+              <div class = "field">
+                <label>Distance in Meters: </label>
+                <input type = "number" id = "meters-text-box">
+              </div>
+              <div class = "field">
+              <label>Distance in Centimeters: </label>
+              <input type = "number" id = "centi-text-box">
+              </div>
+              <div class = "field">
+              <label>Distance in Millimeter: </label>
+              <input type = "number" id = "milli-text-box">
+              </div>
+            </form>
+        </div>
+
+        <div style = "height: 75px"></div>
+
 </body>
 <script src = "js/conversion.js"></script>
 </html>
